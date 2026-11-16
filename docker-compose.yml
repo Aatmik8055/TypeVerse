@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: typeverse-db
+    restart: always
+    environment:
+      POSTGRES_DB: typingrace
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - typeverse_data:/var/lib/postgresql/data
+
+volumes:
+  typeverse_data:
