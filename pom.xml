@@ -17,7 +17,7 @@
 	<description>TypeVerse - Real-time multiplayer typing platform</description>
 
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<jjwt.version>0.12.5</jjwt.version>
 	</properties>
 
@@ -83,12 +83,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- 9. Lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
 
 		<!-- 10. Testing -->
 		<dependency>
@@ -103,14 +97,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
